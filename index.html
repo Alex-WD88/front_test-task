@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Верстка по BEM</title>
+		<link rel="stylesheet" href="style/main.css">
+	</head>
+	<body>
+
+		<div class="container">
+
+			<!-- Блок 1 -->
+			<div class="block block--1">
+				<h2 class="block__title">Travel and Hospitality</h2>
+				<p class="block__content">Offline & Online Translation: image translation, translation history, file translation, bookmarks, dictionary meaning. </p>
+				<button class="main__btn block__btn">Request a free trial</button>
+			</div>
+
+			<!-- Блок 2 -->
+			<div class="block block--2">
+				<h2 class="block__title">Our language solution</h2>
+				<p class="block__content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since </p>
+				<ul class="block__flex">
+					<li class="flex__element">
+						<div class="element__wrapper">
+							<h3 class="element__title">Translation</h3>
+							<p class="element__content">Unlimited and secure translation for fixed price. Translate billions of characters per day</p>
+							<img class="element__img" src="./images/img_1.png" alt="img1">
+						</div>
+					</li>
+					<li class="flex__element">
+						<div class="element__wrapper">
+							<h3 class="element__title">Social listening</h3>
+							<p class="element__content">Unlimited and secure translation for fixed price. Translate billions of characters per day</p>
+							<img class="element__img" src="./images/img_2.png" alt="img2">
+						</div>
+					</li>
+					<li class="flex__element">
+						<div class="element__wrapper">
+							<h3 class="element__title">Content generation</h3>
+							<p class="element__content">Unlimited and secure translation for fixed price. Translate billions of characters per day</p>
+							<img class="element__img" src="./images/img_3.png" alt="img3">
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Блок 3 карты -->
+			<div class="block block--3">
+				<h2 class="block__title">Who is this product for?</h2>
+				<p class="block__content block--3__content">Lingvanex Bot can simply solve a language barrier problem in your team, community, with your international clients and outsourcing partners. It automatically identifies the languages in a conversation and translates all messages of your team members into a chosen language.</p>
+				
+				<div class="buttons__wrapper">
+					<button class="main__btn cards__btn" data-card="card1">For travelers</button>
+					<button class="main__btn cards__btn" data-card="card2">For travel organization</button>
+					<button class="main__btn cards__btn" data-card="card3">For employees</button>
+				</div>
+
+				<div class="stacked-cards">
+					<ul class="stacked-cards__stack js-stacked-cards">
+						<li id="card1" class="stacked-cards__card card">
+							<div class="card__wrapper">
+								<h3 class="block__title card__title">For travelers</h3>
+								<ul class="card__content">
+									<li>Highlight one word in the text on the page.</li>
+									<li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.</li>
+									<li>Highlight one word in the text on the page.</li>
+									<li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.</li>
+								</ul>
+							</div>
+							<img class="card__img" src="./images/card_img-1.png" alt="card img1">
+						</li>
+						<li id="card2" class="stacked-cards__card card">
+							<div class="card__wrapper">
+								<h3 class="block__title card__title">For travel organization</h3>
+								<ul class="card__content">
+									<li>Highlight one word in the text on the page.</li>
+									<li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.</li>
+									<li>Highlight one word in the text on the page.</li>
+									<li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.</li>
+								</ul>
+							</div>
+							<img class="card__img" src="./images/card_img-2.png" alt="card img2">
+						</li>
+						<li id="card3" class="stacked-cards__card card">
+							<div class="card__wrapper">
+								<h3 class="block__title card__title">For employees</h3>
+								<ul class="card__content">
+									<li>Highlight one word in the text on the page.</li>
+									<li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.</li>
+									<li>Highlight one word in the text on the page.</li>
+									<li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.</li>
+								</ul>
+							</div>
+							<img class="card__img" src="./images/card_img-3.png" alt="card img3">
+						</li>
+					</ul>
+				</div>
+
+				<button class="main__btn block__btn">Request a free trial</button>
+
+			</div>
+
+		</div>
+
+	<script src="style/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,315 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: block;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.block {
+    margin-bottom: 20px;
+}
+.block__title {
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #000;
+    margin: 80px 0 24px 0;
+}
+.block__content {
+    display: block;
+    max-width: 600px;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--black-80, #2A2B2FCC);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.main__btn {
+    display: block;
+    color: #000;
+    background-color: #F4F6FD;
+    font-family: Inter;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: none;
+}
+
+/*block 1*/
+.block__btn {
+    background-color: #0146FE;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    width: 366px;
+    height: 64px;
+    padding: 20px 24px 20px 24px;
+    letter-spacing: -0.01em;
+}
+
+/* block 2*/
+.block--2 {
+    margin: 0;
+    margin-bottom: 144px;
+}
+.block__flex {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px;
+    margin: 0 -10px;
+    justify-content: space-around;
+}
+
+.flex__element {
+    display: flex;
+    box-shadow: 0px 0px 10px #bebebe80;
+    transition: .4s;
+    list-style: none;
+    margin: 10px;
+    width: calc(100% / 3 - 10px);
+    max-width: 100%;
+    border-radius: 32px;
+    border: 2px;
+
+}
+
+.element__wrapper {
+    display: inline;
+    width: 100%;
+    padding: 24px 16px 16px 16px;
+    margin: 0;
+    text-align: center;
+}
+
+.element__title {
+    font-family: Inter;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 34px;
+    letter-spacing: -0.03em;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.element__content {
+    display: block;
+    max-width: 315px;
+    font-family: Inter;
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: -0.01em;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.element__img {
+    display: block;
+    width: 100%;
+}
+
+/* block 3 */
+
+.block--3__content {
+    max-width: 650px;
+    margin-bottom: 64px;
+}
+
+.buttons__wrapper {
+    display: block;
+    max-width: max-content;
+    margin: 0 auto;
+}
+.cards__btn {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 16px 32px 16px 32px;
+    letter-spacing: -0.03em;
+    margin: 0 8px;
+}
+.active {
+    background-color: #0146FE;
+    color: #fff;
+}
+.stacked-cards {
+    margin-bottom: 64px;
+}
+.stacked-cards__stack {
+    display: block;
+    list-style-type: none;
+    padding-left: 0;
+    position: relative;
+    margin: 0 0 1rem;
+}
+.stacked-cards__card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px 0px #0000001F;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    min-height: 367px;
+    transition: top 0.5s ease, width 0.5s ease, z-index 0s;
+}
+
+.card {
+    display: flex;
+    padding: 42px;
+    justify-content: space-between;
+}
+.card__wrapper {
+    display: block;
+    max-width: 514px;
+    margin: 0;
+}
+.card__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.card__content {
+    display: block;
+    max-width: 300px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #2A2B2FE5;
+    list-style-type: disc;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    max-width: 507px;
+    border-radius: 32px;
+}
+
+/* Стили для экранов шириной до 1240px */
+@media (max-width: 1240px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .block__title {
+        font-size: 60px;
+        line-height: 60px;
+        margin: 60px 0 20px 0; 
+    }
+    .block__content {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 25.2px;
+        margin-bottom: 30px;
+    }
+    .block__btn,
+    .main__btn,
+    .cards__btn {
+        width: auto;
+        padding: 15px 20px;
+    }
+    .block--2 .block__flex,
+    .buttons__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex__element,
+    .stacked-cards__stack {
+        margin: 15px 0;
+    }
+    .element__wrapper,
+    .card__wrapper {
+        padding: 20px;
+    }
+    .element__title,
+    .card__title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .element__content,
+    .card__content {
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+    .card__img,
+    .element__img {
+        max-width: 100%;
+    }
+
+}
+
+/* Стили для экранов шириной до 768px */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .block__title {
+        font-size: 50px;
+        line-height: 50px;
+        margin: 60px 0 20px 0;
+    }
+    .block__content {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    .block__btn,
+    .main__btn,
+    .cards__btn {
+        width: auto;
+        padding: 15px 20px;
+    }
+    .block--2 .block__flex,
+    .buttons__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex__element,
+    .stacked-cards__stack {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .element__wrapper,
+    .card__wrapper {
+        padding: 20px;
+    }
+    .element__title,
+    .card__title {
+        font-size: 28px; 
+        line-height: 32px;
+    }
+    .element__content,
+    .card__content {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .card__img,
+    .element__img {
+    max-width: 100%;
+    }
+}
